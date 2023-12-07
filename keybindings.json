@@ -1,0 +1,82 @@
+// Place your key bindings in this file to override the defaults
+[
+  // Toggle sidebar and move focus
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "!sidebarFocus"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "workbench.action.focusSideBar",
+    "when": "sidebarFocus"
+  },
+
+  // Navigate between tabs
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.previousEditor"
+  },
+
+  // Save and quit
+  {
+    "key": "ctrl+s",
+    "command": "workbench.action.files.save"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "workbench.action.closeActiveEditor"
+  },
+
+  // Search
+  {
+    "key": "ctrl+f",
+    "command": "actions.find"
+  },
+
+  // Undo and Redo
+  {
+    "key": "ctrl+z",
+    "command": "undo"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "redo"
+  },
+
+  // Copy, Cut, and Paste
+  {
+    "key": "ctrl+c",
+    "command": "editor.action.clipboardCopyAction"
+  },
+  {
+    "key": "ctrl+x",
+    "command": "editor.action.clipboardCutAction"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "editor.action.clipboardPasteAction"
+  },
+
+  // Scroll up and down in the sidebar
+  {
+    "key": "j",
+    "command": "list.focusDown",
+    "when": "listFocus && filesExplorerFocus"
+  },
+  {
+    "key": "k",
+    "command": "list.focusUp",
+    "when": "listFocus && filesExplorerFocus"
+  },
+
+  // Focus on file explorer
+  {
+    "key": "ctrl+0",
+    "command": "workbench.files.action.focusFilesExplorer"
+  }
+]
