@@ -1,4 +1,5 @@
 {
+  // editor
   "editor.fontFamily": "Cascadia Code, Fira Code",
   "editor.fontSize": 24,
   "editor.lineHeight": 2.2,
@@ -9,5 +10,59 @@
   "editor.minimap.enabled": false,
   "editor.fontLigatures": true,
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.smoothScrolling": true
+  "editor.smoothScrolling": true,
+  //   workbench
+  "workbench.colorTheme": "Everforest Dark",
+  "workbench.settings.editor": "json",
+  "workbench.iconTheme": "material-icon-theme",
+  //   explorer
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  //   git | project manager
+  "projectManager.git.baseFolders": ["$home/workspace"],
+  "projectManager.sortList": "Recent",
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  //   Terminal
+  "terminal.integrated.fontFamily": "Cascadia Code",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontSize": 19,
+  "terminal.integrated.fontWeight": "normal",
+  //   vim
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["lineBreakInsert"],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+
+  "[java, python, javascript, c]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
