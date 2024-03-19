@@ -1,8 +1,8 @@
 {
   // editor
-  "editor.fontFamily": "Cascadia Code, Fira Code",
-  "editor.fontSize": 24,
-  "editor.lineHeight": 2.2,
+  "editor.fontFamily": "UbuntuMono Nerd font, Fira Code",
+  "editor.fontSize": 22,
+  "editor.lineHeight": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
@@ -64,5 +64,6 @@
 
   "[java, python, javascript, c]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "terminal.integrated.defaultProfile.osx": "bash"
 }
