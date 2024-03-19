@@ -94,5 +94,17 @@
     "key": "r" /** renaming a new file/direcotry */,
     "command": "renameFile",
     "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+
+  // focus editor to terminal & terminal to again editor
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus && editorTextFocus"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
   }
 ]
