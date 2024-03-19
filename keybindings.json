@@ -66,17 +66,33 @@
   {
     "key": "j",
     "command": "list.focusDown",
-    "when": "listFocus && filesExplorerFocus"
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
   },
   {
     "key": "k",
     "command": "list.focusUp",
-    "when": "listFocus && filesExplorerFocus"
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
   },
 
-  // Focus on file explorer
+  // Focus on file explorer && explorer task
   {
     "key": "ctrl+0",
     "command": "workbench.files.action.focusFilesExplorer"
+  },
+
+  {
+    "key": "a" /** Creating a new file */,
+    "command": "workbench.files.action.createFileFromExplorer",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "d" /** deleting a new file/direcotry */,
+    "command": "deleteFile",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "r" /** renaming a new file/direcotry */,
+    "command": "renameFile",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
   }
 ]
