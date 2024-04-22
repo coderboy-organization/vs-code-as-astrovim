@@ -81,6 +81,11 @@
   },
 
   {
+    "key": "m m" /** Creating a new directory */,
+    "command": "workbench.files.action.createFolderFromExplorer",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
     "key": "a" /** Creating a new file */,
     "command": "workbench.files.action.createFileFromExplorer",
     "when": "listFocus && filesExplorerFocus && !inputFocus"
@@ -93,6 +98,26 @@
   {
     "key": "r" /** renaming a new file/direcotry */,
     "command": "renameFile",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "y" /** copy a file/direcotry from file explorer */,
+    "command": "filesExplorer.copy",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "p" /** Paste a file/direcotry from file explorer */,
+    "command": "filesExplorer.paste",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "x" /** Cut a file/direcotry from file explorer */,
+    "command": "filesExplorer.cut",
+    "when": "listFocus && filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "u" /** Cancel copy/cut a file/direcotry from file explorer */,
+    "command": "filesExplorer.cancelCut",
     "when": "listFocus && filesExplorerFocus && !inputFocus"
   },
 
