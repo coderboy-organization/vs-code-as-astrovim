@@ -1,6 +1,6 @@
 {
   // editor
-  "editor.fontFamily": "UbuntuMono Nerd font, Fira Code",
+  "editor.fontFamily": "Lilex Nerd Font",
   "editor.fontSize": 22,
   "editor.lineHeight": 2,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
