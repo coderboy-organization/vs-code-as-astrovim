@@ -25,7 +25,7 @@
   "git.enableSmartCommit": true,
   "git.autofetch": true,
   //   Terminal
-  "terminal.integrated.fontFamily": "Cascadia Code",
+  "terminal.integrated.fontFamily": "Lilex Nerd Font",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.fontSize": 19,
   "terminal.integrated.fontWeight": "normal",
