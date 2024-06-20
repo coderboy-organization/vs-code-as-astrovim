@@ -131,5 +131,46 @@
     "key": "cmd+j",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "terminalFocus"
+  },
+  // Terminal resizing shortcuts
+  {
+    "key": "cmd+up",
+    "command": "workbench.action.terminal.resizePaneUp",
+    "when": "!editorTextFocus && terminalFocus"
+  },
+  {
+    "key": "cmd+down",
+    "command": "workbench.action.terminal.resizePaneDown",
+    "when": "!editorTextFocus && terminalFocus"
+  },
+  // Create a new terminal when focusing on the terminal
+  {
+    "key": "cmd+n",
+    "command": "workbench.action.terminal.new",
+    "when": "!editorTextFocus && terminalFocus"
+  },
+  // Split the terminal when focusing on it
+  {
+    "key": "cmd+/",
+    "command": "workbench.action.terminal.split",
+    "when": "!editorTextFocus && terminalFocus"
+  },
+  // Kill the terminal when focusing on it
+  {
+    "key": "cmd+backspace",
+    "command": "workbench.action.terminal.kill",
+    "when": "!editorTextFocus && terminalFocus"
+  },
+  // Focus on the next terminal
+  {
+    "key": "cmd+l",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "!editorTextFocus && terminalFocus"
+  },
+  // Focus on the previous terminal
+  {
+    "key": "cmd+h",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "!editorTextFocus && terminalFocus"
   }
 ]
