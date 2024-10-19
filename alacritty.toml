@@ -1,0 +1,41 @@
+[font]
+size = 22
+offset = { x = 3, y = 3 }
+normal      = { family = "UbuntuMono Nerd Font", style = "Regular" }
+bold        = { family = "UbuntuMono Nerd Font", style = "Bold" }
+italic      = { family = "UbuntuMono Nerd Font", style = "Italic" }
+bold_italic = { family = "UbuntuMono Nerd Font", style = "Bold Italic" }
+
+[colors.primary]
+background = "#181818"
+foreground = "#00FF00"
+
+[window]
+decorations = "Transparent"
+dimensions = { columns =  10, lines = 10 }
+opacity = 0.5
+startup_mode = "Fullscreen"
+decorations_theme_variant = "Dark"
+option_as_alt = "Both"
+padding = { x = 7, y = 7 }
+blur = true  # Default: false
+title = "Sabbir Hossain Shuvo - Alacritty"  # Default: "Alacritty"
+
+[bell]
+color = "#003300"
+duration = 32
+animation = "Ease"
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+blink_interval = 300
+blink_timeout = 7
+
+[terminal]
+osc52 = "CopyPaste"
+
+[mouse]
+hide_when_typing = true
