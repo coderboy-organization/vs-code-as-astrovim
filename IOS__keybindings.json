@@ -1,5 +1,10 @@
 // Place your key bindings in this file to override the defaults
 [
+  // quit vs code
+  {
+    "key": "cmd+q",
+    "command": "workbench.action.quit"
+  },
   // Toggle sidebar and move focus
   {
     "key": "cmd+b",
@@ -28,7 +33,7 @@
     "command": "workbench.action.files.save"
   },
   {
-    "key": "cmd+q",
+    "key": "cmd+w",
     "command": "workbench.action.closeActiveEditor"
   },
 
@@ -172,5 +177,17 @@
     "key": "cmd+h",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "!editorTextFocus && terminalFocus"
+  },
+  // collaps code
+  {
+    "key": "cmd+shift+l",
+    "command": "editor.fold",
+    "when": "editorTextFocus && !terminalFocus"
+  },
+  // split text editor
+  {
+    "key": "cmd+d",
+    "command": "workbench.action.splitEditor",
+    "when": "editorTextFocus && !terminalFocus"
   }
 ]
