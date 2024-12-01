@@ -172,5 +172,17 @@
     "key": "ctrl+h",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "!editorTextFocus && terminalFocus"
+  },
+  // focus on extension tab
+  {
+    "key": "ctrl+e",
+    "command": "workbench.view.extensions",
+    "when": "!editorTextFocus && !terminalFocus && filesExplorerFocus"
+  },
+  // focus on world search tab
+  {
+    "key": "ctrl+s",
+    "command": "workbench.view.search",
+    "when": "!editorTextFocus && !terminalFocus && filesExplorerFocus"
   }
 ]
