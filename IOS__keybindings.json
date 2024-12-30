@@ -139,6 +139,16 @@
   },
   // Terminal resizing shortcuts
   {
+    "key": "cmd+right",
+    "command": "workbench.action.terminal.resizePaneRight",
+    "when": "!editorTextFocus && terminalFocus"
+  },
+  {
+    "key": "cmd+left",
+    "command": "workbench.action.terminal.resizePaneLeft",
+    "when": "!editorTextFocus && terminalFocus"
+  },
+  {
     "key": "cmd+up",
     "command": "workbench.action.terminal.resizePaneUp",
     "when": "!editorTextFocus && terminalFocus"
@@ -166,13 +176,13 @@
     "command": "workbench.action.terminal.kill",
     "when": "!editorTextFocus && terminalFocus"
   },
-  // Focus on the next terminal
+  // Focus on the next terminal (splits included)
   {
     "key": "cmd+l",
     "command": "workbench.action.terminal.focusNext",
     "when": "!editorTextFocus && terminalFocus"
   },
-  // Focus on the previous terminal
+  // Focus on the previous terminal (splits included)
   {
     "key": "cmd+h",
     "command": "workbench.action.terminal.focusPrevious",
@@ -184,10 +194,26 @@
     "command": "editor.fold",
     "when": "editorTextFocus && !terminalFocus"
   },
+  {
+    "key": "cmd+shift+h",
+    "command": "editor.unfold",
+    "when": "editorTextFocus && !terminalFocus"
+  },
   // split text editor
   {
     "key": "cmd+d",
     "command": "workbench.action.splitEditor",
     "when": "editorTextFocus && !terminalFocus"
+  },
+  // file explore resizing shortcuts
+  {
+    "key": "cmd+right",
+    "command": "workbench.action.increaseViewSize",
+    "when": "listFocus && filesExplorerFocus && !inputFocus && !terminalFocus"
+  },
+  {
+    "key": "cmd+left",
+    "command": "workbench.action.decreaseViewSize",
+    "when": "listFocus && filesExplorerFocus && !inputFocus && !terminalFocus"
   }
 ]
