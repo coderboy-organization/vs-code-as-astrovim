@@ -190,5 +190,11 @@
     "key": "ctrl+s",
     "command": "workbench.view.search",
     "when": "!editorTextFocus && !terminalFocus && filesExplorerFocus"
+  },
+  // focus on source control tab
+  {
+    "key": "ctrl+g",
+    "command": "workbench.view.scm",
+    "when": "!editorTextFocus && !terminalFocus && filesExplorerFocus"
   }
 ]
