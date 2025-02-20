@@ -155,6 +155,12 @@
     "command": "workbench.action.terminal.split",
     "when": "!editorTextFocus && terminalFocus"
   },
+  // Rename the terminal when focusing on it
+  {
+    "key": "ctrl+r",
+    "command": "workbench.action.terminal.rename",
+    "when": "!editorTextFocus && terminalFocus"
+  },
   // Kill the terminal when focusing on it
   {
     "key": "ctrl+backspace",
