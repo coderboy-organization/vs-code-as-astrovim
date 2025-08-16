@@ -7,6 +7,17 @@
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.fontWeight": "500",
+  "workbench.sideBar.location": "right",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "*",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
   "editor.minimap.enabled": false,
   "editor.fontLigatures": true,
   "editor.cursorSmoothCaretAnimation": "on",
@@ -14,7 +25,6 @@
   //   workbench
   "workbench.colorTheme": "Everforest Dark",
   "workbench.settings.editor": "json",
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.statusBar.visible": false, // bottom status bar hide
   "workbench.activityBar.location": "top", // activity bar location top
   //   explorer
